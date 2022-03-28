@@ -1,0 +1,271 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background: gray;
+}
+.contenedor{
+	display:flex; 
+	border: 1px solid red;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+	justify-content: center
+}
+
+.flex-container{
+	border: 1px solid white;
+	display: flex;
+	flex-flow: row wrap;
+	width: 700px;
+	height: 700px;
+	background: #F45068;
+	
+}
+
+.Botones{
+	margin-top: 1%;
+	display: flex;
+	width: 40%;
+	height: 15%;
+	justify-content: space-evenly;
+}
+.Azul{
+	width: 29%;
+	height: 80%;
+	background: #819CD1;
+	border-radius:50%
+
+}
+.Rojo{
+	width: 10%;
+	height: 28%;
+	border-radius:50%;
+	background: #CC1C1F;
+
+}
+.Verde{
+	width: 10%;
+	height: 28%;
+	border-radius:50%;
+	background: #80BE66;
+
+}
+.Amarrillo{
+	width: 10%;
+	height: 28%;
+	border-radius:50%;
+	background: #FAE160;
+
+}
+
+.pantalla{ 
+display: flex;
+align-content: space-between;
+justify-content: center;
+flex-wrap: wrap;
+position: relative;
+border: 20px #D1D4CD solid;
+width: 80%;
+height: 40%;
+left: 8%;
+background: white;
+border-radius: 15px;
+overflow-y:scroll;
+overflow-x:hidden;
+
+}
+
+
+.pokemon{
+	background: #787575;
+	border-radius: 20px;
+	padding: 2px;
+	text-align: center;
+	margin: 10px;
+	box-shadow: 0 3px 15px rgba(100,100,100, 0.5);
+	transition: transform .2s;
+}
+.pokemon:hover{
+	transform: scale(1.1);
+}
+.pokemon .img_cont{
+	border-radius: 50%;
+	background: white;
+	margin-top: 20px;
+	height: 120px;
+	width: 120px;
+}
+.pokemon .img_cont img{
+	margin-top: 27%;
+	max-width: 90%;
+}
+.pokemon .info{
+	margin-top: 20px; 
+}
+.pokemon .number{
+	background: white;
+	border-radius: 20px;
+	font-size:0.8em;
+	padding: 5px 10px;
+}
+.pokemon .name{
+	margin: 15px 0 7px;
+	letter-spacing: 1px;
+}
+
+
+.data{
+	width: 50%;
+	background: #787575;
+	border-radius: 20px;
+	padding: 2px;
+	text-align: center;
+	margin: 10px;
+	box-shadow: 0 3px 15px rgba(100,100,100, 0.5);
+}
+.data .img_cont2{
+	position: relative;
+	border-radius: 50%;
+	background: white;
+	margin-top: 20px;
+	height: 120px;
+	width: 120px;
+	left: 28%;
+}
+.data .img_cont2 img{
+	margin-top: 27%;
+	max-width: 90%;
+}
+.data .info2{
+	padding: 10px;
+	margin-top: 20px; 
+	border-top: 2px black dashed;
+	border-bottom: 2px black dashed;
+
+}
+.data .number2{
+	background: white;
+	border-radius: 20px;
+	font-size:0.8em;
+	padding: 5px 10px;
+}
+.data .name2{
+	margin: 15px 0 7px;
+	letter-spacing: 1px;
+}
+.data .stats{
+	margin-top: 20px;
+	border-top: 2px black dashed;
+	border-bottom: 2px black dashed;
+}
+
+.data .ataques{
+	margin-top: 20px;
+	border-top: 2px black dashed;
+	border-bottom: 2px black dashed;
+}
+
+
+
+
+.PantallaBusqueda{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	position: relative;
+	border: 1px solid white;
+	width: 45%;
+	height: 15%;
+	top: 9%;
+	left: 27%;
+	background:#5F9248;
+	align-items: center;
+}
+
+#busqueda{
+	background: green;
+	border: solid white;
+	border-radius: 20%;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	outline: none;
+}
+#busqueda::placeholder{
+	color: #CBCBCB;
+}
+
+.BotonBusqueda{
+	border: 1px solid white;
+	position: relative;
+	height: 5%;
+	width: 17%;
+	right: 38%;
+	top:10%;
+	border-radius: 20%;
+	background: #78C263;
+}
+.BotonSinAccion{
+	border: 1px solid white;
+	position: relative;
+	height: 5%;
+	width: 17%;
+	right: 55%;
+	top:18%;
+	border-radius: 20%;
+	background: #CA1D23;
+	
+}
+#home{
+	
+	background: #CA1D23;
+	border-radius: 20%;
+    border: white solid;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	height: 100%;
+	width:100%;
+}
+
+#home:hover{
+	
+	background: #9e060b;
+}
+.Flecha{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 30px;
+	border-top: solid 15px #7E9DD2;
+	border-right: solid 15px #7E9DD2;
+	border-radius: 30%;
+}
+.Derecha{
+	position:relative;
+	left: 5%;
+	top: 9%;
+	transform: rotate(45deg);
+}
+.Izquierda{
+	position:relative;
+	left: 73%;
+	top: -8%;
+	transform: rotate(225deg);	
+}
+.Arriba{
+	position:relative;
+	left: 64%;
+	top: -14%;
+	transform: rotate(315deg);	
+}
+.Abajo{
+	position:relative;
+	left: 49%;
+	top: -2%;
+	transform: rotate(135deg);	
+}

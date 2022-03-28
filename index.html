@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>pokedex</title>
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+<script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+ 
+
+<section class="contenedor">
+	<div class="flex-container">
+	<div class="Botones">
+
+	<div class="Botones Azul">
+	
+	</div>
+	<div class="Botones Rojo">
+	
+	</div>
+	<div class="Botones Amarrillo">
+	
+	</div>
+		<div class="Botones Verde">
+	</div>
+	
+	</div>
+		
+		
+	<div class="pantalla" id="pokecont">
+	
+	</div>
+		<div id="pokecont" class="pokecont1">
+
+		</div>	
+	
+	<div class="PantallaBusqueda">
+		<form id="form" action="" onSubmit="searchPokemon(event)"><input type="text" name="busqueda" id="busqueda" placeholder="Nombre de tu pokemon" autocomplete="off"></form>
+		</div>	
+	
+	<div class="BotonBusqueda">
+		</div>	
+	<div class="BotonSinAccion">
+		<button id="home" value="Inicio" onClick="$(pokemonContainer).empty(); fetchPokemons();">Inicio</button> 
+		</div>	
+	<div class="Flecha Derecha" >
+	
+		</div>	
+	<div class="Flecha Izquierda">
+		</div>	
+		<div class="Flecha Arriba">
+		</div>	
+	<div class="Flecha Abajo">
+		</div>	
+		
+		
+		
+		
+	</div>
+	
+	
+	</section>
+	<footer>
+		<script src="js/main.js"></script>
+	</footer>
+</body>
+</html>
